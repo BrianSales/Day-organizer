@@ -1,42 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets\style.css" />
-    <title>Work Day Scheduler</title>
-  </head>
 
-  <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-    </header>
-    <div class="container" id="planner">
-      <!-- Timeblocks go here -->
-      <div class="row">
-          <div class="hour col">7am</div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets\style.css" />
+  <script src="https://kit.fontawesome.com/384715d238.js" crossorigin="anonymous"></script>
+  <title>Work Day Scheduler</title>
+</head>
+
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+  <div class="container" id="planner">
+    <!-- Timeblocks go here -->
+    <div class="row time-block" data-time="0">
+      <div class="hour col">12am</div>
+      <div class="event-input col"><input type="text" name="event" class="input"></div>
+      <div class="save col"><i class="pig fas fa-piggy-bank"></i></div>
     </div>
+    <div class="row time-block" data-time="1">
+      <div class="hour col">1am</div>
+      <div class="event-input col"><input type="text" name="event" class="input"></div>
+      <div class="save col"><i class="pig fas fa-piggy-bank"></i></div>
+    </div>
+    <div class="row time-block" data-time="2">
+        <div class="hour col">2am</div>
+        <div class="event-input col"><input type="text" name="event" class="input"></div>
+        <div class="save col"><i class="pig fas fa-piggy-bank"></i></div>
+      </div>
+      <div class="row time-block" data-time="3">
+        <div class="hour col">3am</div>
+        <div class="event-input col"><input type="text" name="event" class="input"></div>
+        <div class="save col"><i class="pig fas fa-piggy-bank"></i></div>
+      </div>
+      <div class="row time-block" data-time="4">
+        <div class="hour col">4am</div>
+        <div class="event-input col"><input type="text" name="event" class="input"></div>
+        <div class="save col"><i class="pig fas fa-piggy-bank"></i></div>
+      </div>
+      <div class="row time-block" data-time="5">
+        <div class="hour col">5am</div>
+        <div class="event-input col"><input type="text" name="event" class="input"></div>
+        <div class="save col"><i class="pig fas fa-piggy-bank"></i></div>
+      </div>
+      <div class="row time-block" data-time="6">
+        <div class="hour col">6am</div>
+        <div class="event-input col"><input type="text" name="event" class="input"></div>
+        <div class="save col"><i class="pig fas fa-piggy-bank"></i></div>
+      </div>
+      <div class="row time-block" data-time="7">
+        <div class="hour col">7am</div>
+        <div class="event-input col"><input type="text" name="event" class="input"></div>
+        <div class="save col"><i class="pig fas fa-piggy-bank"></i></div>
+      </div>
+      <div class="row time-block" data-time="8">
+        <div class="hour col">8am</div>
+        <div class="event-input col"><input type="text" name="event" class="input"></div>
+        <div class="save col"><i class="pig fas fa-piggy-bank"></i></div>
+      </div>
+      <div class="row time-block" data-time="9">
+        <div class="hour col">9am</div>
+        <div class="event-input col"><input type="text" name="event" class="input"></div>
+        <div class="save col"><i class="pig fas fa-piggy-bank"></i></div>
+      </div>
+      <div class="row time-block" data-time="10">
+        <div class="hour col">10am</div>
+        <div class="event-input col"><input type="text" name="event" class="input"></div>
+        <div class="save col"><i class="pig fas fa-piggy-bank"></i></div>
+      </div>
+      <div class="row time-block" data-time="11">
+        <div class="hour col">11am</div>
+        <div class="event-input col"><input type="text" name="event" class="input"></div>
+        <div class="save col"><i class="pig fas fa-piggy-bank"></i></div>
+      </div>
+      <div class="row time-block" data-time="12">
+        <div class="hour col">12pm</div>
+        <div class="event-input col"><input type="text" name="event" class="input"></div>
+        <div class="save col"><i class="pig fas fa-piggy-bank"></i></div>
+      </div>
+      <div class="row time-block" data-time="13">
+        <div class="hour col">1pm</div>
+        <div class="event-input col"><input type="text" name="event" class="input"></div>
+        <div class="save col"><i class="pig fas fa-piggy-bank"></i></div>
+      </div>
+      <div class="row time-block" data-time="14">
+          <div class="hour col">2pm</div>
+          <div class="event-input col"><input type="text" name="event" class="input"></div>
+          <div class="save col"><i class="pig fas fa-piggy-bank"></i></div>
+        </div>
+        <div class="row time-block" data-time="15">
+          <div class="hour col">3pm</div>
+          <div class="event-input col"><input type="text" name="event" class="input"></div>
+          <div class="save col"><i class="pig fas fa-piggy-bank"></i></div>
+        </div>
+        <div class="row time-block" data-time="16">
+          <div class="hour col">4pm</div>
+          <div class="event-input col"><input type="text" name="event" class="input"></div>
+          <div class="save col"><i class="pig fas fa-piggy-bank"></i></div>
+        </div>
+        <div class="row time-block" data-time="17">
+          <div class="hour col">5pm</div>
+          <div class="event-input col"><input type="text" name="event" class="input"></div>
+          <div class="save col"><i class="pig fas fa-piggy-bank"></i></div>
+        </div>
+        <div class="row time-block" data-time="18">
+          <div class="hour col">6pm</div>
+          <div class="event-input col"><input type="text" name="event" class="input"></div>
+          <div class="save col"><i class="pig fas fa-piggy-bank"></i></div>
+        </div>
+        <div class="row time-block" data-time="19">
+          <div class="hour col">7pm</div>
+          <div class="event-input col"><input type="text" name="event" class="input"></div>
+          <div class="save col"><i class="pig fas fa-piggy-bank"></i></div>
+        </div>
+        <div class="row time-block" data-time="20">
+          <div class="hour col">8pm</div>
+          <div class="event-input col"><input type="text" name="event" class="input"></div>
+          <div class="save col"><i class="pig fas fa-piggy-bank"></i></div>
+        </div>
+        <div class="row time-block" data-time="21">
+          <div class="hour col">9pm</div>
+          <div class="event-input col"><input type="text" name="event" class="input"></div>
+          <div class="save col"><i class="pig fas fa-piggy-bank"></i></div>
+        </div>
+        <div class="row time-block" data-time="22">
+          <div class="hour col">10pm</div>
+          <div class="event-input col"><input type="text" name="event" class="input"></div>
+          <div class="save col"><i class="pig fas fa-piggy-bank"></i></div>
+        </div>
+        <div class="row time-block" data-time="23">
+          <div class="hour col">11pm</div>
+          <div class="event-input col"><input type="text" name="event" class="input"></div>
+          <div class="save col"><i class="pig fas fa-piggy-bank"></i></div>
+        </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="assets\script.js"></script>
-  </body>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="assets\script.js"></script>
+</body>
+
 </html>

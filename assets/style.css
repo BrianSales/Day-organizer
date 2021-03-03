@@ -27,19 +27,18 @@ body {
   
   .time-block{
     text-align: center;
-    border-radius: 15px;
   }
   
   .row {
     white-space: pre-wrap;
     height: 80px;
-    border-top: 1px solid white;;
+    /* border-top: 1px solid white;; */
   }
   
   .hour {
     background-color: #ffffff;
     color: #000000;
-    border-top: 1px dashed #000000;
+    /* border-top: 1px dashed #000000; */
   }
   
   .past {
@@ -70,3 +69,50 @@ body {
     transition: all .3s ease-in-out;
   }
   
+  .time-block{
+      display:flex;
+      align-items: center;
+      height: 50px;
+      border: 1px solid black;
+      
+  }
+
+  .hour {
+    flex-basis: 10%;
+  }
+
+.col {
+  padding: 0px;
+}
+
+.pig {
+  color: white;
+  line-height: 50px !important;
+  font-size: 24px;
+}
+
+  .event-input{
+      width: 70%;
+      height: 50px;
+      flex-basis: 70%;
+      
+  
+  }
+
+  .save {
+    cursor: pointer;
+    background: pink;
+    height: 50px;
+    width: 100%;
+  }
+
+
+  .input{
+      display:block;
+      width: 100%;
+      padding: 0px;
+      height: 50px;
+      position: relative;
+      top: -1px;
+      padding: 8px;
+  }
